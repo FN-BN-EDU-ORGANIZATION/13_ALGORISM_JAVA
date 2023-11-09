@@ -12,6 +12,7 @@
 구간합2 : https://www.acmicpc.net/problem/11660 <br>
 나머지합 : https://www.acmicpc.net/problem/10986<br>
 
+기타 문제 : https://www.acmicpc.net/problemset?search=%EA%B5%AC%EA%B0%84 <br>
 
 
 
