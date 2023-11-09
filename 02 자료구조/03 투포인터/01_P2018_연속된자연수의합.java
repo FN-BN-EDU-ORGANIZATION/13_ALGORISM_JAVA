@@ -1,7 +1,7 @@
-package C02ÀÚ·á±¸Á¶.C03ÅõÆ÷ÀÎÅÍ;
+package C02ìë£Œêµ¬ì¡°.C03íˆ¬í¬ì¸í„°;
 
 import java.util.Scanner;
-public class C01_P2018_¿¬¼ÓµÈÀÚ¿¬¼öÀÇÇÕ {
+public class C01_P2018_ì—°ì†ëœìì—°ìˆ˜ì˜í•© {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int N = sc.nextInt();
