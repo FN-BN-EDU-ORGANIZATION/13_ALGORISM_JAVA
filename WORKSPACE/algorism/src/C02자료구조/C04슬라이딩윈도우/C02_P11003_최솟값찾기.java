@@ -18,6 +18,7 @@ public class C02_P11003_ÃÖ¼Ú°ªÃ£±â {
     int N = Integer.parseInt(st.nextToken());
     int L = Integer.parseInt(st.nextToken());
     st = new StringTokenizer(br.readLine());
+    
     Deque<Node> mydeque = new LinkedList<>();
     for (int i = 0; i < N; i++) {
       int now = Integer.parseInt(st.nextToken());
@@ -25,7 +26,8 @@ public class C02_P11003_ÃÖ¼Ú°ªÃ£±â {
         mydeque.removeLast();
       }
       mydeque.addLast(new Node(now, i));
-       if (mydeque.getFirst().index <= i - L) {
+       
+      if (mydeque.getFirst().index <= i - L) {
         mydeque.removeFirst();
       }
       bw.write(mydeque.getFirst().value + " ");
