@@ -229,14 +229,12 @@ public class C01리스트 {
 			//3-1 마지막인경우
 			if (p.link == null)
 			{
-				pre.link = null;
-				
+				pre.link = null;	
 			}
 			//3-2 중간인경우
 			else
 			{
 				pre.link = cur.link;
-				
 			}
 		}
 	}
