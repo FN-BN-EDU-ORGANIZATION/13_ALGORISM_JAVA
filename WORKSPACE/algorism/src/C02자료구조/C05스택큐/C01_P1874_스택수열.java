@@ -5,20 +5,29 @@ import java.util.Stack;
 public class C01_P1874_스택수열{
   public static void main(String[] args) {
    
+	  
 	  Scanner sc = new Scanner(System.in);
-    int N = sc.nextInt();
-    int[]A = new int[N];
-    for (int i = 0; i < N; i++) {
-      A[i] = sc.nextInt();
-    }
+	  int N = sc.nextInt();
+	  int[]A = new int[N];
+	  
+	  for (int i = 0; i < N; i++) {
+	      A[i] = sc.nextInt();
+	  }
+	  
     Stack<Integer> stack = new Stack<>();
-    StringBuffer bf = new StringBuffer();
+    StringBuffer bf = new StringBuffer();	// +, - 를 저장
+    
     int num = 1; 
-    boolean result = true;
+    
+    boolean result = true;	// +,-를 표시할지 여부를 정하는 기준
+   
     for (int i = 0; i < A.length; i++) {
-      int su = A[i];  
+      
+    	int su = A[i];  
       if (su >= num) {  
-        while (su >= num) { // push()
+        
+    	  //스택에 오름차순으로 데이터를 넣음 num부터 su까지
+    	while (su >= num) { // push()
           stack.push(num++);
           bf.append("+\n");
         }
@@ -37,7 +46,9 @@ public class C01_P1874_스택수열{
           bf.append("-\n");
         }
       }
+      
     }
+    
     if (result) System.out.println(bf.toString());
   }
 }
