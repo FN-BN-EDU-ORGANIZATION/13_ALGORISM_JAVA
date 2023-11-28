@@ -15,9 +15,9 @@ package C03정렬.C00사전개념;
 //-----------------------------
 //스스로를 반복적으로 호출하는 형태의 코드를 포함하는 함수
 
-
+//Recursive
 public class C01재귀함수 {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		//01 
 		//Recursive(3);
 
@@ -28,7 +28,7 @@ public class C01재귀함수 {
 		//Recursive3(3);
 		
 		//04
-//		int total = recursive4(10);
+//		int total = recursive4(3);
 //		System.out.printf("합계 : %d\n", total);
 		
 		//05
@@ -49,12 +49,13 @@ public class C01재귀함수 {
 	//-------------------------------
 	//1) 재귀함수 기본
 	//-------------------------------
+
 	static void Recursive(int num)
 	{
 		if (num > 0)
 		{
 			System.out.printf("Recursive call!!: %d\n", num);
-			Recursive(num - 1);		//자신을 호출 
+			Recursive(num - 1);		//자신을 호출
 		}
 	}
 	//-------------------------------
@@ -78,8 +79,7 @@ public class C01재귀함수 {
 		{
 			System.out.printf("Recursive call!!: %d\n", num); //3 -> 2 -> 1
 			Recursive3(num - 1);		//자신을 호출 
-			System.out.printf("Recursive call!!: %d\n", num); //1 -> 2 -> 3
-	
+			System.out.printf("Recursive call!!: %d\n", num); //1 -> 2 -> 3	
 		}
 	}
 	//-------------------------------
