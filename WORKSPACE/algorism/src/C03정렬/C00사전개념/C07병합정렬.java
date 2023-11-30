@@ -35,7 +35,8 @@ public class C07병합정렬 {
 	  }
 	  
 	  private static void merget_sort(int s, int e) {
-	    if (e - s < 1) {	//더이상 나눌수 없다면{
+	    
+		if (e - s < 1) {	//더이상 나눌수 없다면{
 	    	System.out.println("return S : " + s + " ,E : " + e);
 	      return;	//바로 위로 리턴(2개이상의 블럭그룹부터 시작)
 	    }

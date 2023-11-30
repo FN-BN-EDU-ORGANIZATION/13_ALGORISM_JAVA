@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 
 public class C08퀵정렬 {
 
+	
 	public static void main(String[] args) { 
 	    
    
@@ -15,9 +16,9 @@ public class C08퀵정렬 {
 	    for(int i : A) {
 	    	System.out.print(i + " ");
 	    }
-	  }
+	}
 	  
-		//파티션 나누기
+		
 	  public static void quickSort(int[] A, int S, int E) 
 	  {
 	      
@@ -56,6 +57,8 @@ public class C08퀵정렬 {
 	    swap(A,S,j); // 피벗의값과 j의 값 Swap
 	    return j; // 옮겨진 피벗의 idx 반환
 	}
+	  
+	  
 	  
 	  public static void swap(int[] A, int i, int j) {
 	    int temp = A[i];
